@@ -1,0 +1,55 @@
+/**index.wxss**/
+@import '../../asset/iconfont.wxss';
+.index {
+  height: 100vh;
+}
+.selectWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+picker-view.select {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 105px;
+}
+
+picker-view-column {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  width: 45vw;
+}
+
+picker-view-column view {
+  line-height: 30px;
+  background: #f6fafd;
+}
+
+.selectWrapper {
+}
+.inputWrapper {
+  background: white;
+  width: 100vw;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+  display: flex;
+  padding: 10px;
+  padding-right: 0;
+}
+.input {
+  width: 90vw;
+}
+.inputHolder {
+  font-size: 40rpx;
+}
+.icon-clear {
+  position: relative;
+  z-index: 100;
+}
+
+.targetWrapper {
+  padding: 10px;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('https://at.alicdn.com/t/font_1240588_2j8e3hd8s0c.ttf?t=1560403997226') format('truetype'),
+         url('https://at.alicdn.com/t/font_1240588_2j8e3hd8s0c.svg?t=1560403997226#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 50rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clear:before {
+  content: "\eadb";
+}
+
+.icon-Translate:before {
+  content: "\edd2";
+}

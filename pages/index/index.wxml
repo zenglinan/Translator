@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class='index'>
+  <view class='selectWrapper'>
+    <picker-view class="select" indicator-style="height: 35px;" value="{{originLangIndex}}" bindchange="onOrignLangChnage">
+      <picker-view-column>
+        <view wx:for="{{langList}}" wx:key="{{index}}">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+    <text>></text>
+    <picker-view class="select" indicator-style="height: 35px;" value="{{targetLangIndex}}" bindchange="onTargetLangChnage">
+      <picker-view-column>
+        <view wx:for="{{langList}}" wx:key="{{index}}">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+  <view class='inputWrapper'>
+    <textarea placeholder="请输入你要翻译的内容(200字内)" class="input" maxlength='200' placeholder-class="inputHolder" value="{{query}}" bindinput='onInput' bindblur='onConfirm' bindconfirm='onConfirm'></textarea>
+    <text class='iconfont icon-clear' bindtap="clear" hidden="{{hideClearIcon}}"></text>
+  </view>
+  <view class='targetWrapper'>
+    <text class='target'>{{query}}</text>
+  </view>
+</view>
