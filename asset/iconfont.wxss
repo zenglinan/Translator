@@ -1,12 +1,11 @@
-@font-face {
-  font-family: "iconfont";
-  src: url('https://at.alicdn.com/t/font_1240588_2j8e3hd8s0c.ttf?t=1560403997226') format('truetype'),
-         url('https://at.alicdn.com/t/font_1240588_2j8e3hd8s0c.svg?t=1560403997226#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "iconfont";
+  src:url('https://at.alicdn.com/t/font_1240588_6w9ojg1m4bh.ttf?t=1560450379863') format('truetype'), 
+  url('https://at.alicdn.com/t/font_1240588_6w9ojg1m4bh.svg?t=1560450379863#iconfont') format('svg'); 
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 50rpx;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,6 +15,11 @@
   content: "\eadb";
 }
 
+.icon-zhuanhuan:before {
+  content: "\e61c";
+}
+
 .icon-Translate:before {
   content: "\edd2";
 }
+

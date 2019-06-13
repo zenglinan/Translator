@@ -1,3 +1,14 @@
-<view class="container">
-  <text>history</text>
+<view class='history'>
+  <view class='historyHeader'>
+    <text class='hisTitle'>翻译历史</text>
+    <button class='clearAll' bindtap='clearAll'>一键清空</button>
+  </view>
+  <scroll-view class='historyList' scroll-with-animation="true">
+    <view class='item' wx:for="{{history}}" wx:key="{{index}}">
+      <text class='from'><text class='lang'>({{item.from}}) </text>{{item.origin}}</text>
+      <text class="iconfont icon-zhuanhuan"></text>
+      <text class='to'><text class='lang'>({{item.to}}) </text>{{item.target}}</text>
+      <text class='iconfont icon-clear' data-index="{{index}}" bindtap="onDelete"></text>
+    </view>
+  </scroll-view>
 </view>

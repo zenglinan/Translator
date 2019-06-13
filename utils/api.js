@@ -8,22 +8,29 @@ function translate(q, {
   to = "en"
 } = {}) {
   return new Promise((reslove, reject) => {
-    let salt = new Date()
+    let salt = Date.now()
     let sign = md5(`${appid}${q}${salt}${key}`)
     wx.request({
       url: 'https://fanyi-api.baidu.com/api/trans/vip/translate',
       method: 'GET',
       data: {
+        q,
         from,
         to,
+        appid,
         salt,
         sign
       },
       success(res) {
-        reslove(res)
+        reslove(res.data)
       },
       fail(res){
         reject(res)
+        wx.showToast({
+          title: '网络异常',
+          icon: 'loading',
+          duration: 3000
+        })
       }
     })
   })

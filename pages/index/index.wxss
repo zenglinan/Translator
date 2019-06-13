@@ -28,8 +28,6 @@ picker-view-column view {
   background: #f6fafd;
 }
 
-.selectWrapper {
-}
 .inputWrapper {
   background: white;
   width: 100vw;

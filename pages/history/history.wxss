@@ -1,0 +1,64 @@
+@import '../../asset/iconfont.wxss';
+@import '../../utils/animate.wxss';
+.index {
+  height: 100vh;
+}
+
+.history {
+  padding: 3vw;
+}
+
+.hisTitle {
+  font-size: 34rpx;
+  color: #8995a1;
+}
+.historyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clearAll {
+  margin: 0;
+  font-size: 28rpx;
+  padding: 0;
+  width: 30vw;
+}
+.historyList {
+  padding-top: 20rpx;
+}
+.item {
+  position: relative;
+  padding: 25rpx 8vw;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+.item > text {
+  font-size: 26rpx;
+  color: #222;
+  white-space: nowrap; /*不分行显示*/
+  overflow: hidden; /*溢出隐藏*/
+  text-overflow: ellipsis; /*文字溢出省略号*/
+  width: 45vw;
+  text-align: center;
+}
+text.lang {
+  color: #8995a1;
+}
+.item text.icon-zhuanhuan {
+  font-weight: bold;
+  width: 10vw;
+}
+.item .icon-clear {
+  font-size: 5.5vw;
+  width: 8vw;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .3s;
+  z-index: 100;
+}
