@@ -49,7 +49,7 @@ Page({
     }
   },
   onConfirm() {
-    let oriLangItem = this.data.langList[this.data.originLangIndex[0]]  // 源语言对象
+    let oriLangItem = this.data.langList[this.data.originLangIndex[0]] // 源语言对象
     let tarLangItem = this.data.langList[this.data.targetLangIndex[0]] // 指定语言对象
     let origin = `${oriLangItem.title}`
     let target = `${tarLangItem.title}`
@@ -58,7 +58,6 @@ Page({
         to: target
       })
       .then(res => {
-        console.log(res)
         if (res.trans_result) {
           this.setData({
             'result': res.trans_result[0]['dst']
@@ -71,14 +70,11 @@ Page({
             target: res.trans_result[0]['dst']
           })
           wx.setStorageSync('history', history)
-          console.log(history)
         } else {
           this.setData({
             'result': ''
           })
         }
-
-        console.log(this.data)
       })
   },
   onTargetLangChnage(e) {
@@ -101,53 +97,30 @@ Page({
       hideClearIcon: true
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-
+  copy(e){
+    let copyText = e.currentTarget.dataset.text
+    wx.setClipboardData({
+      data: copyText
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
+  onLoad(res) {
+    if (Object.keys(res).length != 0) {
+      console.log('here')
+      let fromLangIndex = this.data.langList.findIndex((item) => {
+        return item.name === res.from
+      }) // 传参过来的语言，通过 title 过滤出 langList 中的 name 值
+      let toLangIndex = this.data.langList.findIndex((item) => {
+        return item.name === res.to
+      })
+      console.log(fromLangIndex)
+      console.log(toLangIndex)
+      this.setData({
+        query: res.origin,
+        result: res.target,
+        originLangIndex: [fromLangIndex],
+        targetLangIndex: [toLangIndex]
+      })
+    }
   },
 
   /**

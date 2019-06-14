@@ -18,6 +18,6 @@
     <text class='iconfont icon-clear' bindtap="clear" hidden="{{hideClearIcon}}"></text>
   </view>
   <view class='targetWrapper'>
-    <text class='target'>{{result}}</text>
+    <textarea class='target' selectable='true' value='{{result}}' bindtap='copy' data-text='{{result}}'></textarea>
   </view>
 </view>

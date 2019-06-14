@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/history/history",
-    "pages/index/index"
-    
+    "pages/index/index",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -34,7 +34,7 @@ picker-view-column view {
   border-top: 1px solid #dfe1e5;
   border-bottom: 1px solid #dfe1e5;
   display: flex;
-  padding: 10px;
+  padding: 2.5vw;
   padding-right: 0;
 }
 .input {
@@ -44,10 +44,14 @@ picker-view-column view {
   font-size: 40rpx;
 }
 .icon-clear {
+  font-size: 5vw;
   position: relative;
   z-index: 100;
 }
 
 .targetWrapper {
-  padding: 10px;
+  padding: 2.5vw;
+}
+.targetWrapper textarea.target {
+  width: 90vw;
 }

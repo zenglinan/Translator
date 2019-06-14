@@ -1,5 +1,4 @@
 @import '../../asset/iconfont.wxss';
-@import '../../utils/animate.wxss';
 .index {
   height: 100vh;
 }
@@ -16,6 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.selectItem {
+  background-color: #e9eef3;
 }
 .clearAll {
   margin: 0;

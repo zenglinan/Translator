@@ -4,11 +4,11 @@
     <button class='clearAll' bindtap='clearAll'>一键清空</button>
   </view>
   <scroll-view class='historyList' scroll-with-animation="true">
-    <view class='item' wx:for="{{history}}" wx:key="{{index}}">
+    <view class='item' wx:for="{{history}}" wx:key="{{index}}" hover-class="selectItem" hover-stay-time="50" hover-start-time="20" bindtap='toIndex' data-from="{{item.from}}" data-to="{{item.to}}" data-origin='{{item.origin}}' data-target='{{item.target}}'>
       <text class='from'><text class='lang'>({{item.from}}) </text>{{item.origin}}</text>
       <text class="iconfont icon-zhuanhuan"></text>
       <text class='to'><text class='lang'>({{item.to}}) </text>{{item.target}}</text>
-      <text class='iconfont icon-clear' data-index="{{index}}" bindtap="onDelete"></text>
+      <text class='iconfont icon-clear' id='deleteIcon' data-index="{{index}}" bindtap="onDelete"></text>
     </view>
   </scroll-view>
 </view>
