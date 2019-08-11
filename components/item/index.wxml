@@ -1,0 +1,4 @@
+<view class="item">
+  <icon icon="{{icon}}"></icon>
+  <slot></slot>
+</view>

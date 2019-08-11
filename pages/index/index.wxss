@@ -1,0 +1,14 @@
+.indexWrapper .input {
+  border: 1px solid red;
+  padding: 24rpx;
+  width: 100%;
+  font-size: 42rpx;
+}
+.indexWrapper .placeholder {
+  color: rgb(204,204,204);
+  font-size: 42rpx;
+}
+.indexWrapper .selectedLangWrapper{
+  display: flex;
+  justify-content: center;
+}

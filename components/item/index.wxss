@@ -1,0 +1,12 @@
+.item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: rgb(58, 58, 58);
+  padding: 6rpx 8px;
+  border-radius: 24rpx;
+  background-color: rgb(244,244,244);
+}
+.item i {
+  margin-right: 6rpx;
+}

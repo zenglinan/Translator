@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "selectedLang": "/components/selectedLang/index"
+    "selectedLang": "/components/selectedLang/index",
+    "item": "/components/item/index"
   }
 }

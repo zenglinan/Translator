@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "components/selectedLang/index",
-    "components/icon/index"
+    "components/icon/index",
+    "components/item/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

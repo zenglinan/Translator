@@ -1,1 +1,16 @@
-<selectedLang />
+<view class="indexWrapper">
+  <view class="selectedLangWrapper">
+    <selectedLang />
+  </view>
+  <textarea placeholder="请输入要翻译的单词或句子"
+            placeholder-class="placeholder"
+            auto-focus
+            adjust-position="false"
+            class="input"
+  ></textarea>
+  <view class="items">
+    <item icon="i-camera">
+    <view>插入内容</view>
+  </item>
+  </view>
+</view>
