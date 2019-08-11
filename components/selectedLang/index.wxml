@@ -1,0 +1,11 @@
+<view class='outerWrapper'>
+  <view class="langWrapper">
+    <view class="lang">中文</view>
+    <icon icon="i-down" class="down iconStyle"></icon>
+  </view>
+  <icon icon="i-translate" class="translate iconStyle"></icon>
+  <view class="langWrapper">
+    <view class="lang">英文</view>
+    <icon icon="i-down"  class="down iconStyle"></icon>
+  </view>
+</view>
