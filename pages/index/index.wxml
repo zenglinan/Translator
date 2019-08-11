@@ -10,7 +10,7 @@
   ></textarea>
   <view class="items">
     <item icon="i-camera">
-    <view>插入内容</view>
+    <view>拍照翻译</view>
   </item>
   </view>
 </view>

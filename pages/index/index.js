@@ -1,3 +1,4 @@
+const translate = require('../../utils/api1')
 Page({
 
   /**
@@ -25,7 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    translate().then(res=>{
+      console.log(res)
+    })
   },
 
   /**
